@@ -1,0 +1,43 @@
+.product-form-content {
+    padding: 5% 15%;
+    background-color: white;
+    text-align: center;
+}
+
+.form-title {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+    margin:5px 0 40px;
+}
+
+.form-content {
+    //width: 100%;
+    //padding: 5px;  
+}
+
+.contact-form-field {
+    //margin: auto;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.image-button {
+    margin: 25px;
+    font-size: 17px;
+}
+
+@media(min-width: 576px) {
+    .contact-form-field {
+        //margin: auto;
+        width: 70%;
+    }
+}
+
+@media(min-width: 768px) {
+    .contact-form-field {
+        //margin: auto;
+        width: 65%;
+    }
+}

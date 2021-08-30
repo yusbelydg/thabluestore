@@ -1,0 +1,103 @@
+<app-banner></app-banner>
+
+<div class="home-container">
+    <div class="title-welcome">
+        Bienvenidos a Blue Store
+    </div>
+
+    <div class="row recomendeds">  
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="box title-recomendeds">
+                Artículos Recomendados
+            </div>
+        </div>  
+        
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <div class="box">
+                <mat-card class="home-carousel">
+                    <mat-card-content> <!-- [height]="500" -->
+                        <carousel 
+                        [height]="200"
+                        [cellsToShow]="1" 
+                        [cellsToScroll]= "1" 
+                        [loop]= "true" 
+                        [autoplay]= "true" 
+                        [autoplayInterval]="2000" 
+                        [pauseOnHover]="true" 
+                        [dots]="false" 
+                        [margin]="0" 
+                        [transitionTimingFunction]="'ease-in-out'"
+                        [arrowsTheme]="'dark'" 
+                        class="carousel-1"
+                        >
+                            <div *ngFor="let recomended of imageRecomendeds; index as i" 
+                            class="carousel-cell">
+                                <a routerLink="/products">
+                                    <img [src]="imageRecomendeds[i]" alt="" >
+                                </a>
+                            </div>
+                        </carousel>
+
+                        <carousel 
+                        [height]="400"
+                        [cellsToShow]="3" 
+                        [cellsToScroll]= "2" 
+                        [loop]= "true" 
+                        [autoplay]= "true" 
+                        [autoplayInterval]="2000" 
+                        [pauseOnHover]="true" 
+                        [dots]="false" 
+                        [margin]="0" 
+                        [transitionTimingFunction]="'ease-in-out'"
+                        [arrowsTheme]="'dark'"
+                        class="carousel-2" 
+                        >
+                            <div *ngFor="let recomended of imageRecomendeds; index as i" 
+                            class="carousel-cell">
+                                <a routerLink="/products">
+                                    <img [src]="imageRecomendeds[i]" alt="" >
+                                </a>
+                            </div>
+                        </carousel>
+                    </mat-card-content>
+                </mat-card>
+            </div>
+        </div>
+
+        <!--
+        <div *ngFor="let recomended of imageRecomendeds; index as i" class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="box">
+                <div class="carousel-cell">
+                    <mat-card>
+                        <mat-card-content>
+                            <img [src]="imageRecomendeds[i]" class="img-recomendeds" alt="">
+                        </mat-card-content>
+                        <mat-card-actions>
+                            <div class="button-recomendeds">
+                                <button mat-raised-button color="primary">
+                                    Detalle
+                                </button>
+                            </div>
+                        
+                        </mat-card-actions>
+                    </mat-card>
+                </div>
+            </div>
+        </div>
+        -->
+
+        
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="box">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+            <div class="box">
+
+            </div>
+        </div>
+    </div>
+</div>

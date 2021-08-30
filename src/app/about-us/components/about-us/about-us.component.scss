@@ -1,0 +1,83 @@
+.about-us {
+    width: 95%;
+    margin: 0 2%;
+    background-image: url("/assets/images/estelamorada.png");
+    background-size: 100% 100%;
+    background-repeat:round;
+}
+
+.about-heading {
+    font-weight: bold;
+    font-size: 27px;
+    margin: 30px 0;
+    text-align: center;
+    line-height: 140%;
+    letter-spacing: 2px;
+}
+
+.about-introduction {
+    text-align: center;
+}
+
+.about-description {
+    font-size: 20px;
+    line-height: 160%;
+}
+
+.about-advantage-title {
+    color: whitesmoke;
+}
+
+.about-advantage{
+    background-color: #6a1b9a; // rgba(106,27,154, 0.5);//rgba(0,0,0,0.5);////#913ac7; //
+    padding: 2px;
+    width: 100%;
+}
+
+.about-box {
+    color:whitesmoke;
+    font-size: 22px;
+    padding: 20px;
+    text-align: justify;
+    height: 100%; 
+    line-height:  160%;
+}
+
+.about-section {
+    width: 100%;
+}
+
+.about-buy {
+    margin-top: 80px;
+}
+
+.about-buy-list {
+    font-size: 22px;
+    line-height: 160%;
+    margin: auto;
+}
+
+.about-image {
+    max-width: 90%;
+    height: auto;
+    margin: 0;
+}
+
+.separator {
+    display: block;
+    border-width: 1px;
+    border-style: solid;
+    background-color: black;
+    margin: 5px 25px;
+}
+
+@media(min-width: 1024px) {
+    .about-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .separator {
+        display: none;
+    }
+}

@@ -1,0 +1,65 @@
+<div class="footer">
+    <div class="container-footer">
+        <div class="row around-xs">
+            
+            <div class="col-xs-12 col-sm-4">
+                <div class="box">
+                    <h3>
+                        Productos
+                    </h3>
+                    <ul>
+                        <li> <a routerLink="/products">
+                            Nuevos productos 
+                        </a> </li>
+                        <li> <a routerLink="/products">
+                            En oferta
+                        </a> </li>
+                        <li> <a routerLink="/products">
+                            Ultimos productos 
+                        </a> </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="box">
+                    <h3>
+                        Acerca de Blue Store
+                    </h3>
+                    <ul>
+                        <li> <a routerLink="/about-us"> Sobre Nosotros </a> </li>
+                        <li> Nuestras tiendas </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-4">
+                <div class="box">
+                    <h3>
+                        Contacto
+                    </h3>
+                    <mat-form-field>
+                        <input matInput placeholder="Digite su correo" [formControl]="emailField" type="text">  
+                    </mat-form-field>
+                    <br><br>         
+                    <button mat-raised-button [disabled]="emailField.invalid" (click)="sendMail()" > Enviar </button>                   
+                    <!--<ul>
+                        <li> Telefono: 123 456 789 </li>
+                        <li> Correo: platzistore@platzi.com </li>
+                        <li> <a routerLink="/contact">
+                            Escribenos
+                        </a> </li>
+                    </ul> -->
+                </div>
+            </div>
+
+            <div class="col-xs-12 col-sm-12">
+                <div class="box">
+                    <div class="author">
+                        Realizado por Yusbely Delgado - 2021
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

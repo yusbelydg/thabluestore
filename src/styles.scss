@@ -1,0 +1,56 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column; 
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /*Aqui usamos 1 por 1fr porque usaremos el metodo mobile first y para las demas resoluciones cambiamos ese 1 por otros numeros*/
+    //grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 50px 20px;
+    //grid-gap: 50px 20px // espacios entre los elementos del frid
+}
+
+.container {
+    width: 100%;
+    padding-right: 0px;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.admin-tables {
+    width: 96%;
+    margin: 2%;
+}
+
+@media(min-width: 576px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .container {
+        max-width: 90%;
+        padding-right: 16px;
+        padding-left: 16px;
+      }
+}
+
+@media(min-width: 768px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(min-width: 1024px) {
+    .product-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+} 
+/*
+*/
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

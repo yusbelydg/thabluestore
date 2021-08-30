@@ -1,0 +1,49 @@
+.grid-container {
+  margin: 20px;
+}
+
+.dashboard-card {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  right: 15px;
+  bottom: 15px;
+}
+
+.more-button {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+}
+
+.dashboard-card-title {
+  font-size: 15px;
+}
+
+.dashboard-card-content {
+  text-align: center;
+}
+
+.counter{
+  text-align: center;
+  font-size: 27px;
+  margin: 100px auto;
+  color: #6a1b9a;
+  padding: 0 20px 0 0;
+}
+
+@media(min-width: 576px) {
+  .dashboard-card-title {
+    font-size: 23px;
+  }
+
+  .counter{
+    font-size: 50px;
+  }
+}
+
+@media(min-width: 1024px) {
+  .counter{
+    font-size: 100px;
+  }
+}

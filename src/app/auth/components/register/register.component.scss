@@ -1,0 +1,73 @@
+.register-content {
+    width: 90%;
+    padding: 0 5%;
+    text-align: center;
+}
+.register-card {
+    //width: 80%;
+    //margin: 5% 0 20; 
+    padding: 5px 0 20px 0;  
+}
+
+.register-form {
+    //padding: 50px 10px;
+}
+
+.contact-form-field {
+    //margin: auto;
+    width: 90%;
+    margin: 10px 0;
+}
+
+.radio-button-field{
+    margin: 5px 8px;
+}
+
+.register-actions {
+    margin: 20px 0;
+}
+
+@media(min-width: 576px) {
+    .register-content {
+        width: 80%;
+        padding: 0 10%;
+        //margin: 0 5% 0;;
+    }
+
+    .contact-form-field {
+        //margin: auto;
+        width: 70%;
+    }
+}
+
+@media(min-width: 768px) {
+    .contact-form-field {
+        //margin: auto;
+        width: 65%;
+    }
+
+    .register-actions button{
+        //margin: 20px 0;
+        font-size: 18px;
+    }
+}
+
+@media(min-width: 1024px) {
+    .register-content {
+        width: 60%;
+        padding: 8% 20%;
+    }
+
+    .contact-form-field {
+        //margin: auto;
+        width: 55%;
+
+    }
+
+    .register-actions button{
+        //margin: 20px 0;
+        font-size: 20px;
+    }
+}
+
+

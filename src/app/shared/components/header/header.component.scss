@@ -1,0 +1,74 @@
+nav > a { // Cualquier a que este dentro del elentro nav 
+    padding: 5px;
+    margin: 3px 0px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav > a.active { // Solo los active aplicar un estilo en especial
+    background-color: #6a1b9a;
+    border: 2px solid white;
+}
+
+.header-row{
+    width: 100%; 
+}
+
+mat-toolbar{
+    padding: 30px 0;
+}
+
+.cart-button {
+   font-size: 20px;
+   padding: 8px;
+   color: #6a1b9a;
+}
+
+.cart-button span {
+    display: none;
+}
+
+.container { 
+    flex: 1 1 auto;  /*grow vertically*/
+    margin-bottom: 90px; // 25%;
+    margin-top: 40px;
+    min-height: 100vh;
+    //position: relative;
+}
+
+.menu-icon {
+    margin: 10px;
+}
+
+@media(min-width: 576px) {
+    nav > a { // Cualquier a que este dentro del elentro nav 
+        font-size: 18px;
+        margin: 0;
+    }
+
+    mat-toolbar{
+        padding: 10px 0;
+    }
+
+    .cart-button span {
+        display:initial;
+    }  
+
+    .container { 
+        margin-bottom: 600px; // 25%;
+    }
+}
+
+@media(min-width: 768px) {
+    .container { 
+        margin-bottom: 100px; // 25%;
+    }
+}
+
+@media(min-width: 1024px) {
+    nav > a { // Cualquiera que este dentro del elentro nav 
+        padding: 8px;
+        font-size: 20px;
+        
+    }
+}

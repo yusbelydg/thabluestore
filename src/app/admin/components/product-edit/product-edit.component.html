@@ -1,0 +1,58 @@
+<div class="product-form-content"> 
+    <form [formGroup]="form" (ngSubmit)="saveProduct($event)" >
+        <mat-card>
+            <mat-card-header>
+                <!--<mat-card-title>-->
+                    <div class="form-title">
+                        Edita el Producto
+                    </div>
+                <!--</mat-card-title>-->
+            </mat-card-header>
+            <mat-card-content>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="box">
+                            <mat-form-field class="contact-form-field">
+                                <input matInput placeholder="Titulo" formControlName="title" type="text">
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="box">
+                            <mat-form-field class="contact-form-field">
+                                <input matInput placeholder="Inserta un Precio (no debe pasar de 10000)" formControlName="price" type="number">
+                            </mat-form-field>
+
+                            <div *ngIf="priceField!.errors && priceField!.dirty">
+                                <p *ngIf="priceField!.hasError('price_invalid')"> Este campo no deb pasar de 10.000 </p>
+                                <p *ngIf="priceField!.hasError('required')"> Este campo es requerido </p>
+                            </div>
+
+                            <!--
+                            <div *ngIf="form.get('price')!.errors && form.get('price')!.dirty">
+                                <p *ngIf="form.get('price').hasError('price_invalid')"> Este campo no deb pasar de 10.000 </p>
+                                <p *ngIf="form.get('price').hasError('required')"> Este campo es requerido </p>
+                            </div> 
+                            -->
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="box">
+                            <mat-form-field class="contact-form-field">
+                                <textarea matInput placeholder="Agrega una Descripcion" formControlName="description" id="" cols="30" rows="6"></textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button [disabled]="form.invalid" type="submit"> Guardar </button>
+            </mat-card-actions>
+        </mat-card>    
+    </form>
+</div>
+

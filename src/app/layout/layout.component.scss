@@ -1,0 +1,19 @@
+.container { 
+    flex: 1 1 auto;  /*grow vertically*/
+    margin-bottom: 90px; // 25%;
+    margin-top: 40px;
+    min-height: 100vh;
+    //position: relative;
+}
+
+@media(min-width: 576px) {
+    .container { 
+        margin-bottom: 600px; // 25%;
+    }
+}
+
+@media(min-width: 768px) {
+    .container { 
+        margin-bottom: 100px; // 25%;
+    }
+}

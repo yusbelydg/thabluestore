@@ -1,0 +1,57 @@
+.image{
+    max-width: 100%;
+  }
+
+  .order-features{
+    margin: 5px;
+    padding: 0 10%;
+  }
+
+  .shipping-card{
+    margin: 20px auto;
+  }
+
+  .order-field{
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .mat-radio-button {
+    display: block;
+    margin: 6px 2px;
+  }
+
+  .button-stepper {
+    margin: 30px 5px 0 0;
+  }
+
+  .button-pay{
+    margin: 20px 0;
+    font-size: 20px;
+    color: white;
+    background-color: #6a1b9a;
+  }
+
+  .button-delete{
+    cursor: pointer;
+  }
+
+  .messageCompra {
+    margin-top: 45px;
+    font-size: 30px;
+    color: green;
+    font-weight: bold;
+    
+  }
+
+  @media(min-width: 768px) {
+    .order-features{
+      margin: 5px;
+      padding: 20%;
+    }
+  
+  }
+  
+
+
+  

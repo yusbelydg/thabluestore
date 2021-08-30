@@ -1,0 +1,48 @@
+<div class="login-content">
+    <form [formGroup]="form" (ngSubmit)="login($event)">
+        <mat-card class="login-card">
+            <mat-card-title>
+                Iniciar Sesión
+            </mat-card-title>
+            <mat-card-content>            
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="box">
+                            <mat-form-field class="contact-form-field">
+                                <input matInput placeholder="Usuario" formControlName="email" type="email">
+                                <mat-error *ngIf="emailField!.errors && emailField!.dirty">
+                                    <p *ngIf="emailField!.hasError('required')"> Campo requerido </p>
+                                    <p *ngIf="emailField!.hasError('email')"> Error al introducir correo </p>
+                                    <p *ngIf=""></p>
+                
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12">
+                        <div class="box">
+                        <mat-form-field class="contact-form-field">
+                                <input matInput placeholder="Contraseña" formControlName="password" type="password">
+                                <mat-error *ngIf="passwordField!.errors && passwordField!.dirty">
+                                    <p *ngIf="passwordField!.hasError('required')"> Campo requerido </p>
+                                    <p *ngIf="passwordField!.hasError('minlength')"> Contraseña demasiado corta debe tener al menos 8 caracteres</p>
+                
+                                </mat-error>
+                            </mat-form-field>
+                        </div>
+                    </div>
+                </div>
+                
+            </mat-card-content>
+            <mat-card-actions>
+                <button mat-raised-button [disabled]="form.invalid" type="submit"> Entrar </button>
+                <div class="register">
+                    ¿No estás registrado? <a routerLink="/auth/register">Regístrate aquí</a>
+                </div>
+            </mat-card-actions>
+        </mat-card>
+    </form>
+</div>

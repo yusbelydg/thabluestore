@@ -1,0 +1,119 @@
+.contact-container {
+    margin: 5% auto;
+}
+
+.contact-title {
+    margin: 35px auto;
+    width: 100%;
+    font-weight: bold;
+    font-size: 23px;
+    line-height: 30px;
+    text-align: center;
+}
+
+.contact-form{
+   width: 60%;
+   margin: auto;
+
+}
+
+.contact-form-field {
+    width:100%;
+}
+
+.send-info {
+    margin: 5% 20%;
+    width: 60%;
+}
+
+.contact-form button {
+    padding: 10px 15px;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    background-color: #6a1b9a;
+    margin: 5% 15%;
+    width: 100%;
+}
+
+.title-redes {
+    text-align: center;
+    margin: 20px auto 40px;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.redes {
+ margin: 20px auto 60px;
+}
+
+.icon-redes {
+    text-align: center;
+}
+
+.icon-redes mat-icon{
+    font-size: 50px;
+}
+
+.icon-redes img{
+    width: 25%;
+    height: 25%;
+}
+
+.about-us-button {
+    display: block;  
+    margin: 10% 20%;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #6a1b9a;
+    color: white;
+
+}
+
+@media(min-width: 576px) {
+    .contact-title {
+        font-size: 26px;
+    }
+
+    .send-info {
+        margin: 5% 25%;
+        width: 50%;
+    }
+
+    .title-redes {
+        font-size: 25px;
+    }
+
+    .about-us-button {
+        font-size: 23px;
+        padding: 20px 20px;
+    }  
+
+}
+
+@media(min-width: 1024px) {
+    .contact-title {
+        font-size: 28px;
+        margin: 30px 220px 50px;
+    }
+
+    .send-info {
+        margin: 5% 27%;
+        width: 45%;
+    }
+
+    .contact-form button {
+        font-size: 20px;
+    }
+
+    .about-us-button {
+        margin: 5% 30%;
+    }
+
+    .icon-redes img{
+        width: 18%;
+        height: 18%;
+    }
+}

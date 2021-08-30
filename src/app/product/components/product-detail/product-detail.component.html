@@ -1,0 +1,163 @@
+<div *ngIf="product" class="product-detail"> 
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-12 col-md-6">
+      <div class="box">
+          <img [src]="product.image" alt="">
+      </div>     
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6">
+      <div class="box">
+        <mat-card>
+          <mat-card-header class="card-header-product">
+            Nuevo | 16 vendidos
+          </mat-card-header>
+          <mat-card-content>
+            <!--<ul>
+              <li> Nombre: {{ product.title }} </li>
+              <li> Precio: {{ product.price | currency }} </li>
+            </ul> -->
+            <div class="row">
+              <div class="col-xs-10 col-sm-10">
+                <div class="box">
+                  <h1> <p>  {{ product.title }} </p> </h1>  
+                </div>
+              </div>
+              <div class="col-xs-2 col-sm-2">
+                <div class="box">
+                  <mat-icon>favorite_border</mat-icon>
+                </div>
+              </div>
+
+              <div class="col-xs-12 col-sm-12">
+                <div class="box">
+                  <h2> <p>  Precio: {{ product.price | currency }} </p> </h2> 
+                </div>
+              </div>
+              <div class="col-xs-12 col-sm-12">
+                <div class="box">
+                  <h3> <p> {{ product.description }} </p> </h3>
+                </div>
+              </div>
+
+              <!-- <div class="col-xs-12 col-sm-12">
+                <div class="box">
+                  <mat-form-field>
+                    <mat-label> Cantidad </mat-label>
+                    <mat-select>
+                      <mat-option value="one">1</mat-option>
+                      <mat-option value="two">2</mat-option>
+                      <mat-option value="one">2</mat-option>
+                      <mat-option value="two">3</mat-option>
+                      <mat-option value="one">4</mat-option>
+                      <mat-option value="two">5</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+                </div>
+              </div>-->
+              
+              <div class="col-xs-12 col-sm-12">
+                <div class="box">
+                <button mat-raised-button class="add-to-cart-detail" (click)= "addCart()"> Agregar al carrito </button>
+                </div>
+              </div>
+
+            </div>   
+          </mat-card-content>          
+        </mat-card>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-xs-12 col-sm-12 col-md-12">
+      <div class="box">
+        <h1><p> Reviews </p></h1>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6">
+      <div class="box">
+        <mat-card class="card-review">
+          <mat-card-header >
+            Jose Escalona
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star_border</mat-icon>
+            <mat-icon>star_border</mat-icon>
+          </mat-card-header>
+          
+          <mat-card-content>
+            Very Cool product, best choise ever!
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6">
+      <div class="box">
+        <mat-card>
+          <mat-card-header>
+            Maria Alejandra Guzmán
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star_border</mat-icon>   
+          </mat-card-header>
+          
+          <mat-card-content>
+            Nice! I recomend it. 
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6">
+      <div class="box">
+        <mat-card>
+          <mat-card-header>
+            Mike Gomez
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>       
+          </mat-card-header>
+          
+          <mat-card-content>
+           Best ever t-shirt!
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-6">
+      <div class="box">
+        <mat-card>
+          <mat-card-header>
+            Anne Hatem
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star</mat-icon>
+            <mat-icon>star_border</mat-icon>  
+          </mat-card-header>
+          
+          <mat-card-content>
+            So cool, i really like it. 
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </div>
+  </div>  
+
+  <!-- <button class="create-button" mat-raised-button (click)="createProduct()" > Crear </button>
+  <button mat-raised-button color="accent" (click)="updateProduct()" > Actualizar </button>
+  <button mat-raised-button color="warn" (click)="deleteProduct()" > Eliminar </button>
+  -->
+</div>
+

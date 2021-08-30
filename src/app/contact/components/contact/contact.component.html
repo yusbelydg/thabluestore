@@ -1,0 +1,125 @@
+<div class="contact-container">
+    <mat-card>
+        <mat-card-header>
+            <mat-card-title> </mat-card-title>
+            <div class="contact-title">
+                ¡Nos interesa conocer tus dudas y sugerencias!
+            </div> 
+        </mat-card-header>
+
+        <mat-card-content>
+            <form class="contact-form">
+                <div class="row">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="box">
+                            <mat-form-field class="contact-form-field">
+                                <mat-label>Ingresa Nombre y Apellido:</mat-label>
+                                <input matInput placeholder="" value="" required>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="box">
+                            <mat-form-field class="contact-form-field">
+                                <mat-label>Ingresa correo electronico:</mat-label>
+                                <input matInput placeholder="" value="" required>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="box">
+                            <mat-form-field class="contact-form-field">
+                                <mat-label>Escribe tu mensaje</mat-label>
+                                <textarea matInput placeholder=" " required></textarea>
+                            </mat-form-field>
+                        </div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <div class="box">
+                            <mat-card-actions>
+                                <div class="send-info">
+                                    <button mat-raised-button color="primary" type="submit" value="" > Enviar Info </button>
+                                </div>
+                            </mat-card-actions>
+                        </div>
+                    </div>
+  
+                </div>
+            </form>
+            
+            <div class="row redes">
+                <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="box">
+                        <div class="title-redes">
+                            Síguenos en nuestras redes sociales y conoce más de nosotros
+                        </div>           
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="box">
+                        <div class="icon-redes">
+                            <img [src]="imagesRedes[0]" alt="">
+                            <!--<mat-icon aria-hidden="false" aria-label="Instagram" size="">
+                                facebook
+                            </mat-icon>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="box">
+                        <div class="icon-redes">
+                            <img [src]="imagesRedes[1]" alt="">
+                            <!--<mat-icon aria-hidden="false" aria-label="Instagram" size="">
+                                facebook
+                            </mat-icon>-->
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+                    <div class="box">
+                        <div class="icon-redes">
+                            <img [src]="imagesRedes[2]" alt="">
+                            <!--<mat-icon aria-hidden="false" aria-label="Instagram" size="">
+                                facebook
+                            </mat-icon>-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </mat-card-content>
+        <mat-card-footer>
+            <a mat-raised-button routerLink="/about-us" class="about-us-button"> Acerca de Nosotros </a>   
+        </mat-card-footer>
+    </mat-card>
+</div>
+
+
+
+<!--
+<form>
+    <div>
+        Ingresa Nombre y Apellido:
+        <input type="text" value="">
+        <br>
+    </div>
+    <br>
+    <div>
+        Ingresa correo electronico:
+        <input type="text" value="">
+        <br>
+    </div>
+    <br>
+    <div>
+        <p> Mensaje: </p> 
+        <textarea name="mensaje"></textarea>
+        <br>
+    </div>
+    <br>
+    <div>
+        <input type="submit" value="Enviar Info">
+    </div>
+</form> 
+-->
